@@ -1,0 +1,8 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" fill="#07111f"/>
+  <circle cx="700" cy="160" r="260" fill="#4BE4FF" fill-opacity=".16"/>
+  <circle cx="160" cy="910" r="280" fill="#F6C86B" fill-opacity=".14"/>
+  <circle cx="450" cy="390" r="150" fill="#18273a"/>
+  <path d="M210 930C238 763 333 665 450 665C567 665 662 763 690 930H210Z" fill="#18273a"/>
+  <text x="450" y="1010" fill="#DDE7F4" font-family="Arial, sans-serif" font-size="46" text-anchor="middle" font-weight="700">Kunaal Shivakumar</text>
+</svg>
