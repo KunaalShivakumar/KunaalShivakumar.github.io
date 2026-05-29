@@ -23,7 +23,7 @@ Add these files in `public/` before publishing:
 
 ```bash
 npm run build
-npm run start
 ```
 
-The project is ready to deploy on Vercel. Push this `portfolio_websitefolder` directory to GitHub, import the repository in Vercel, and use the default Next.js settings.
+The project deploys to GitHub Pages through the workflow in `.github/workflows/deploy.yml`.
+Push to `main`, then set GitHub Pages to use **GitHub Actions** as the source in the repository settings.
