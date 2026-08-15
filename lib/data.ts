@@ -48,22 +48,35 @@ export const stats = [
   { value: "2+", label: "Years Industry Experience" },
   { value: "2", label: "IEEE Publications" },
   { value: "Best", label: "Paper Presenter Award" },
-  { value: "150+", label: "Automated Test Cases" },
+  { value: "100+", label: "Automated Test Cases" },
   { value: "8.47", label: "CGPA" }
 ];
 
 export const experience = [
   {
     company: "Q2 Software",
-    role: "Associate Software Developer in Test",
-    period: "August 2024 - Present",
+    role: "Software Developer in Test",
+    period: "August 2026 - Present",
     icon: BriefcaseBusiness,
     points: [
-      "Designing and maintaining scalable Selenium automation frameworks using Python for enterprise financial application testing",
-      "Automating 150+ critical regression test cases and improving coverage across high-priority product workflows",
-      "Built an AI-powered Jenkins Reporting Agent with Claude Skills and Agents for 26 Financial Institution pipelines, automating failure reports, fix recommendations, and bi-weekly trend analysis",
-      "Integrating automated suites into Jenkins CI/CD pipelines to support faster regression cycles and clearer release confidence",
-      "Performing functional, regression, database, and cross-browser validation while collaborating closely in Agile ceremonies and defect triage"
+      "Owning automation initiatives by improving Python-Selenium frameworks, building AI-powered testing capabilities, and integrating them into CI/CD workflows",
+      "Developing Claude Skills and Agents workflows that analyze repositories, existing test cases, and automation patterns to identify reusable coverage opportunities",
+      "Automating end-to-end test contribution workflows, including repository analysis, test implementation, execution validation, failure handling, and pull request creation",
+      "Validating AI-generated automated tests in headed and headless execution modes to ensure stability, correctness, and CI compatibility",
+      "Managing Jenkins CI/CD automation and regression execution to improve feedback cycles and release-readiness visibility"
+    ]
+  },
+  {
+    company: "Q2 Software",
+    role: "Associate Software Developer in Test",
+    period: "August 2024 - July 2026",
+    icon: BriefcaseBusiness,
+    points: [
+      "Designed and maintained Python-Selenium automation suites using unittest for enterprise financial applications, automating 100+ critical regression test cases",
+      "Developed API automation and smoke test suites in Postman, achieving 95%+ endpoint coverage for backend services",
+      "Integrated automated regression suites with Jenkins CI/CD pipelines for continuous testing and faster feedback on code changes",
+      "Performed manual, functional, regression, database, smoke, and cross-browser testing using Selenium, Postman, SQL Server, and BrowserStack",
+      "Built an AI-powered Jenkins Reporting Agent using Claude Skills and Agents for 26 Financial Institution pipelines, automating failure reports, fix recommendations, and quality trend analysis"
     ]
   },
   {
