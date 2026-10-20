@@ -108,8 +108,6 @@ export const skillGroups = [
       { name: "HTML", level: 88 },
       { name: "CSS", level: 84 },
       { name: "JavaScript", level: 80 },
-      { name: "PHP", level: 76 },
-      { name: "Flask", level: 82 },
       { name: "Selenium", level: 92 }
     ]
   },
@@ -129,7 +127,9 @@ export const skillGroups = [
       { name: "Postman", level: 86 },
       { name: "BrowserStack", level: 80 },
       { name: "TensorFlow", level: 82 },
-      { name: "Claude Skills & Agents", level: 84 }
+      { name: "Claude Skills & Agents", level: 84 },
+      { name: "LangChain", level: 82 },
+      { name: "LangGraph", level: 82 }
     ]
   }
 ];
