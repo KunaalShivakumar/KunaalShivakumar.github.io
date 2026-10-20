@@ -26,7 +26,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/kunaal-shivakumar-6a2a49245",
   github: "https://github.com/KunaalShivakumar",
   bio:
-    "I am a Software Developer in Test at Q2 Software, building and validating Python-Selenium automation for enterprise financial applications. I also develop Claude Skills and Agents workflows that analyze repositories, identify reusable test coverage, and automate test contributions through validation and pull request creation. My background includes Jenkins CI/CD, API testing, and IEEE-published research in deep learning and decentralized finance.",
+    "Software Developer in Test at Q2 Software, focused on Python-Selenium automation, Jenkins CI/CD, and Claude-powered testing. Co-author of IEEE publications on deep learning and decentralized finance.",
   typingRoles: [
     "Software Developer in Test",
     "IEEE Research Author"
