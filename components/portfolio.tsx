@@ -23,6 +23,7 @@ import {
   certifications,
   contactItems,
   credibilityDocuments,
+  education,
   experience,
   navItems,
   profile,
@@ -279,6 +280,27 @@ function About() {
             <p className="mt-2 text-sm leading-5 text-mist">{stat.label}</p>
           </motion.div>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function Education() {
+  return (
+    <section id="education" className="section-band py-20">
+      <div className="section-shell">
+        <SectionHeading eyebrow="Education" title="Computer science foundations." />
+        <div className="grid gap-4 md:grid-cols-2">
+          {education.map((item) => (
+            <article key={item.degree} className="glass premium-card rounded-2xl p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.14em] text-cyanflare">{item.period}</p>
+              <h3 className="mt-3 font-display text-xl font-semibold text-white">{item.degree}</h3>
+              <p className="mt-2 text-slate-200">{item.institution}</p>
+              <p className="mt-1 text-sm text-mist">{item.university} · {item.location}</p>
+              <p className="mt-4 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-sm text-gold">{item.result}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -577,11 +599,8 @@ function Certifications() {
       <SectionHeading eyebrow="Certifications" title="Continuous learning across APIs, automation, testing, and delivery tooling." />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {certifications.map((certification, index) => (
-          <motion.a
+          <motion.div
             key={certification.title}
-            href={withBasePath(certification.href)}
-            target="_blank"
-            rel="noreferrer"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
@@ -592,10 +611,12 @@ function Certifications() {
             <CheckCircle2 className="mb-6 h-7 w-7 text-emeraldflare" />
             <p className="font-display text-lg font-semibold leading-snug text-white">{certification.title}</p>
             <p className="mt-2 text-sm text-mist">{certification.issuer}</p>
-            <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-white">
-              View credential <ArrowUpRight size={15} />
-            </span>
-          </motion.a>
+            {certification.href ? (
+              <a href={withBasePath(certification.href)} target="_blank" rel="noreferrer" className="focus-surface mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold text-white hover:text-cyanflare">
+                View credential <ArrowUpRight size={15} />
+              </a>
+            ) : <span className="mt-auto pt-6 text-sm text-slate-400">Completed</span>}
+          </motion.div>
         ))}
       </div>
     </section>
@@ -681,6 +702,7 @@ export default function Portfolio() {
       <Hero />
       <About />
       <Experience />
+      <Education />
       <Skills />
       <Projects />
       <Research />

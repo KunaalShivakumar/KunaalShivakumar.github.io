@@ -14,20 +14,19 @@ import {
   Rocket,
   Sparkles,
   Trophy,
-  Workflow
 } from "lucide-react";
 
 export const profile = {
   name: "Kunaal Shivakumar",
-  title: "Software Developer in Test | IEEE Research Author",
+  title: "Software Developer in Test | AI-Driven Test Automation",
   tagline:
-    "Building reliable software through automation, intelligent systems, and continuous innovation.",
+    "Building reliable test automation for enterprise financial software with Python, Selenium, Jenkins, and Claude Skills & Agents.",
   location: "Bengaluru, India",
   email: "knsk0035@gmail.com",
   linkedin: "https://www.linkedin.com/in/kunaal-shivakumar-6a2a49245",
   github: "https://github.com/KunaalShivakumar",
   bio:
-    "I am a Software Developer in Test specializing in automation frameworks, Selenium, Jenkins, and CI/CD, with a strong interest in Artificial Intelligence and Machine Learning. My experience ranges from developing scalable automation frameworks for enterprise financial applications to conducting IEEE-published research in deep learning for medical image analysis and decentralized finance. I am passionate about building reliable software systems, exploring emerging technologies, and leveraging intelligent solutions to solve real-world challenges at the intersection of software development, testing, and AI.",
+    "I am a Software Developer in Test at Q2 Software, building and validating Python-Selenium automation for enterprise financial applications. I also develop Claude Skills and Agents workflows that analyze repositories, identify reusable test coverage, and automate test contributions through validation and pull request creation. My background includes Jenkins CI/CD, API testing, and IEEE-published research in deep learning and decentralized finance.",
   typingRoles: [
     "Software Developer in Test",
     "IEEE Research Author"
@@ -37,6 +36,7 @@ export const profile = {
 export const navItems = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Research", href: "#research" },
@@ -59,37 +59,35 @@ export const experience = [
     period: "August 2026 - Present",
     icon: BriefcaseBusiness,
     points: [
-      "Owning automation initiatives by improving Python-Selenium frameworks, building AI-powered testing capabilities, and integrating them into CI/CD workflows",
-      "Developing Claude Skills and Agents workflows that analyze repositories, existing test cases, and automation patterns to identify reusable coverage opportunities",
-      "Automating end-to-end test contribution workflows, including repository analysis, test implementation, execution validation, failure handling, and pull request creation",
-      "Validating AI-generated automated tests in headed and headless execution modes to ensure stability, correctness, and CI compatibility",
-      "Managing Jenkins CI/CD automation and regression execution to improve feedback cycles and release-readiness visibility"
+      "Improved Python-Selenium automation frameworks and integrated new automation workflows into CI/CD for enterprise financial applications",
+      "Developed Claude Skills and Agents workflows to analyze repositories, existing test cases, and automation patterns to identify reusable automation coverage",
+      "Automated the test contribution workflow from repository analysis and implementation through execution validation, failure handling, and pull request creation",
+      "Validated AI-generated automated tests in headed and headless modes for stability, correctness, and CI compatibility",
+      "Managed Jenkins CI/CD automation and regression execution to shorten feedback cycles and improve release validation"
     ]
   },
   {
     company: "Q2 Software",
-    role: "Associate Software Developer in Test",
+    role: "Associate SDET",
     period: "August 2024 - July 2026",
     icon: BriefcaseBusiness,
     points: [
       "Designed and maintained Python-Selenium automation suites using unittest for enterprise financial applications, automating 100+ critical regression test cases",
       "Developed API automation and smoke test suites in Postman, achieving 95%+ endpoint coverage for backend services",
       "Integrated automated regression suites with Jenkins CI/CD pipelines for continuous testing and faster feedback on code changes",
-      "Performed manual, functional, regression, database, smoke, and cross-browser testing using Selenium, Postman, SQL Server, and BrowserStack",
-      "Built an AI-powered Jenkins Reporting Agent using Claude Skills and Agents for 26 Financial Institution pipelines, automating failure reports, fix recommendations, and quality trend analysis"
+      "Developed a Jenkins Reporting Agent using Claude Skills and Agents for 26 Financial Institution pipelines, automating failure reports, fix recommendations, and quality trend analysis"
     ]
-  },
+  }
+];
+
+export const education = [
   {
-    company: "Q2 Software",
-    role: "QA Intern",
-    period: "April 2024 - August 2024",
-    icon: Workflow,
-    points: [
-      "Resolved 100+ automation failures by analyzing flaky scripts, locator changes, synchronization issues, and environment-related failures",
-      "Improved pipeline stability by 85% through regression debugging, test maintenance, and consistent CI execution follow-up",
-      "Executed manual and automated testing across desktop and mobile platforms to validate key financial workflows before release",
-      "Worked with Jenkins, BrowserStack, Selenium, and defect-tracking workflows while documenting findings for development and QA teams"
-    ]
+    degree: "Bachelor of Engineering in Computer Science",
+    institution: "BMS Institute of Technology and Management (BMSIT&M)",
+    location: "Bengaluru",
+    university: "Visvesvaraya Technological University (VTU)",
+    period: "June 2024",
+    result: "CGPA: 8.47/10"
   }
 ];
 
@@ -104,7 +102,7 @@ export const skillGroups = [
     ]
   },
   {
-    title: "Web Development & Tools",
+    title: "Web Technologies",
     icon: Rocket,
     skills: [
       { name: "HTML", level: 88 },
@@ -112,8 +110,7 @@ export const skillGroups = [
       { name: "JavaScript", level: 80 },
       { name: "PHP", level: 76 },
       { name: "Flask", level: 82 },
-      { name: "Selenium", level: 92 },
-      { name: "Jenkins", level: 86 }
+      { name: "Selenium", level: 92 }
     ]
   },
   {
@@ -125,15 +122,14 @@ export const skillGroups = [
     ]
   },
   {
-    title: "Artificial Intelligence",
+    title: "Automation & Testing Tools",
     icon: BrainCircuit,
     skills: [
+      { name: "Jenkins", level: 86 },
+      { name: "Postman", level: 86 },
+      { name: "BrowserStack", level: 80 },
       { name: "TensorFlow", level: 82 },
-      { name: "CNN", level: 86 },
-      { name: "VGG16", level: 78 },
-      { name: "DenseNet121", level: 78 },
-      { name: "Machine Learning", level: 84 },
-      { name: "Deep Learning", level: 82 }
+      { name: "Claude Skills & Agents", level: 84 }
     ]
   }
 ];
@@ -143,7 +139,7 @@ export const projects = [
     title: "Bone Tumour Detection and Classification Using Deep Learning",
     badge: "Featured Project",
     description:
-      "Developed a deep learning system for automated bone tumour detection from CT scans using CNN, VGG16, and DenseNet121. Achieved 91.3% accuracy and deployed the solution through a Flask-based web application.",
+      "Preprocessed and augmented 6,000 CT images, then trained and fine-tuned CNN, VGG-16, and DenseNet121 models for bone tumour classification. DenseNet121 achieved 91.3% accuracy and a 0.89 F1-score; the model was deployed in a Flask web app for real-time classification.",
     technologies: ["Python", "TensorFlow", "CNN", "VGG16", "DenseNet121", "Flask", "Machine Learning"],
     highlights: ["91.3% Accuracy", "6000+ Medical Images", "IEEE Publication", "Best Paper Presenter Award"],
     icon: BrainCircuit,
@@ -194,41 +190,44 @@ export const achievements = [
   },
   { title: "IEEE Published Research Author", detail: "2 peer-reviewed publications", icon: BookOpenCheck },
   { title: "VTU North Zone Cricket Tournament Winner", detail: "Competitive university sports", icon: Medal },
-  { title: "VTU State-Level Inter-Collegiate Cricket Tournament Finalist", detail: "State-level finalist", icon: Award },
+  { title: "4th Place, VTU State-Level Inter-Collegiate Cricket Tournament", detail: "February 2024", icon: Award },
   { title: "Student Placement Coordinator", detail: "Campus leadership", icon: Sparkles },
   { title: "Student Sports Coordinator", detail: "Team coordination and events", icon: Trophy }
 ];
 
 export const certifications = [
   {
-    title: "API Testing Foundations",
-    issuer: "LinkedIn Learning",
-    href: "/documents/api-testing-foundations.pdf"
-  },
-  {
-    title: "Postman Essential Training",
-    issuer: "LinkedIn Learning",
-    href: "/documents/postman-essential-training.pdf"
-  },
-  {
-    title: "Jenkins Essential Training",
-    issuer: "LinkedIn Learning",
-    href: "/documents/jenkins-essential-training.pdf"
-  },
-  {
-    title: "Learning Jenkins",
-    issuer: "LinkedIn Learning",
-    href: "/documents/learning-jenkins.pdf"
+    title: "Complete Agentic AI Bootcamp With LangGraph and LangChain",
+    issuer: "Udemy · September 2026 · 45.5 hours",
+    href: "/documents/complete-agentic-ai-bootcamp-langgraph-langchain.pdf"
   },
   {
     title: "Introduction to Prompt Engineering for Generative AI",
-    issuer: "LinkedIn Learning",
+    issuer: "LinkedIn Learning · 2026",
     href: "/documents/prompt-engineering-generative-ai.pdf"
   },
   {
     title: "Claude with the Anthropic API",
-    issuer: "Anthropic API credential",
+    issuer: "Anthropic · 2026",
     href: "/documents/claude-anthropic-api.pdf"
+  },
+  {
+    title: "Python Automation and Testing",
+    issuer: "LinkedIn Learning · October 2024"
+  },
+  {
+    title: "Jenkins Essential Training",
+    issuer: "LinkedIn Learning · June 2024",
+    href: "/documents/jenkins-essential-training.pdf"
+  },
+  {
+    title: "Postman Essential Training",
+    issuer: "LinkedIn Learning · May 2024",
+    href: "/documents/postman-essential-training.pdf"
+  },
+  {
+    title: "Python Essential Training",
+    issuer: "LinkedIn Learning · April 2024"
   }
 ];
 
